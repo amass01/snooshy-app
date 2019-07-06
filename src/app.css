@@ -25,7 +25,7 @@ The imported CSS rules must precede all other types of rules.
 }
 
 .tabview.active {
-    vertical-align: bottom; 
+    /* vertical-align: bottom;  */
 }
 
 .tabviewText {
@@ -147,7 +147,7 @@ The imported CSS rules must precede all other types of rules.
 }
 
 .category-name {
-    color: #f7f7f7;
+    color: #bd2122;
     font-size: 14;
     font-weight: bold;
     horizontal-align: center;

@@ -29,6 +29,10 @@ export class HomeComponent implements OnInit {
     this.page.actionBarHidden = true;
   }
 
+  getItemImages(category: Category) {
+    return category.products.map((item) => item.cover);
+  }
+
   showItem(itemId: string) {
     console.log(`Tapped on ${itemId}`);
     // this.routerExtensions.navigate(["detail/" + itemId, {

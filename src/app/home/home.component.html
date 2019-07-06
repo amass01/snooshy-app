@@ -1,7 +1,7 @@
 <GridLayout rows="auto,auto,*,auto" columns="auto">
 
   <GridLayout row="1" #navTab class="navTab" verticalAlignment="top" height="50"
-      width="100%" rows="auto" columns="100,*,90,70,60" color="#FFFFFF">
+      width="100%" rows="auto" columns="20,100,*,70,75" color="#FFFFFF">
 
       <StackLayout [class]="selectedTabview==0?'tabview active':'tabview'"
           (tap)="onPopularTap()" col="3" row="1" >
@@ -15,18 +15,14 @@
         <Label [class]="selectedTabview==1?'tabviewText active':'tabviewText'"
               row="1" text="תפריט"></Label>
       </StackLayout>
-      <StackLayout [class]="selectedTabview==2?'tabview active':'tabview'"
-          (tap)="onPromosTap()" col="2" row="1"
-          width="33%"
-      >
-        <Label [class]="selectedTabview==2?'tabviewText active':'tabviewText'"
-              row="1" text="הגרלת השקה"></Label>
-      </StackLayout>
+    
 
-      <StackLayout orientation="horizontal" col="0" row="1" >
+      <StackLayout orientation="horizontal" col="1" row="1" >
         <Image (tap)="onSearchTap()" horizontalAlignment="right"
                class="logo-img" src="~/images/logo-s-white.png"></Image>
       </StackLayout>
+
+      <StackLayout orientation="horizontal" col="0" row="1" ></StackLayout>
   </GridLayout>
 
   <GridLayout *ngIf="selectedTabview == 0" row="2" width="100%"
@@ -95,63 +91,21 @@
   <GridLayout *ngIf="selectedTabview == 1" row="2" width="100%"
       backgroundColor="white">
       <ListView #categoryListview [items]="categories" separatorColor="transparent">
-          <ng-template let-item="item">                
-              <GridLayout rows="*" columns="*">
-                  <Image height="150" width="100%" marginBottom="10"
-                      stretch="aspectFill" [src]="item.cover"></Image>
-                  <GridLayout verticalAlignment="bottom">
-                      <StackLayout class="banner2" backgroundColor="#489e9e9e">
-                          <Label [text]="item.category + ' (' +  item.count  +  ')'"
-                              class="category-name  m-b-10 m-t-10" textwrap="true"></Label>
-                      </StackLayout>
-                  </GridLayout>
-              </GridLayout>
+          <ng-template let-item="item">
+            <StackLayout backgroundColor="#489e9e9e">
+                    <Label [text]="item.category + ' (' +  item.count  +  ')'" 
+                    class="category-name  m-b-10 m-t-10" textwrap="true"></Label>
+                <ScrollView class="anim-images" orientation="horizontal">
+                    <StackLayout orientation="horizontal" >
+                        <GridLayout *ngFor="let imageString of getItemImages(item)" rows="auto"
+                            columns="*">
+                            <Image class="card-img-thumb" row="0" col="0" [src]="imageString"
+                                stretch="aspectFill"></Image>
+                            </GridLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>   
           </ng-template>
       </ListView>
   </GridLayout>
-
-  <GridLayout *ngIf="selectedTabview == 2" row="2" width="100%"
-      backgroundColor="white">
-  </GridLayout>
-
- 
-
-
-  <!-- <GridLayout class="navBottom" height="50" width="100%" row="3" rows="auto"
-      columns="auto,auto,auto,auto">
-
-      <GridLayout [class]="selectedTab==0?'nav active':'nav'" (tap)="onHomeTap()"
-          rows="*,auto" cols="auto" col="0" row="0" width="25%">
-          <Image [class]="selectedTab==0?'navIcon active':'navIcon'" row="0"
-              [src]="selectedTab==0?'~/assets/images/navhomem.png':'~/assets/images/navhome.png'"></Image>
-          <Label row="1" *ngIf="selectedTab==0" text="Home" class="navText"></Label>
-      </GridLayout>
-
-      <GridLayout [class]="selectedTab==1?'nav active':'nav'" (tap)="onCartTap()"
-          rows="*,auto" cols="auto" col="1" row="0" width="25%">
-          <Image [class]="selectedTab==1?'navIcon ':'navIcon'" row="0"
-              [src]="selectedTab==1?'~/assets/images/navcartm.png':'~/assets/images/navcart.png'"></Image>
-          <Label row="1" *ngIf="selectedTab == 1" text="Cart" class="navText"></Label>
-      </GridLayout>
-
-      <GridLayout [class]="selectedTab==2?'nav active':'nav'" (tap)="onHistoryTap()"
-          rows="*,auto" cols="auto" col="2" row="0" width="25%">
-          <Image [class]="selectedTab==2?'navIcon active':'navIcon'" row="0"
-              [src]="selectedTab==2?'~/assets/images/navordersm.png':'~/assets/images/navorders.png'"></Image>
-          <Label row="1" *ngIf="selectedTab == 2" text="History" class="navText"></Label>
-      </GridLayout>
-
-      <GridLayout [class]="selectedTab==3?'nav active':'nav'" (tap)="onAboutTap()"
-          rows="*,auto" cols="auto" col="3" row="0" width="25%">
-
-          <Image [class]="selectedTab==3?'navIcon active':'navIcon'" row="0"
-              [src]="selectedTab==3?'~/assets/images/navusm.png':'~/assets/images/navus.png'"></Image>
-          <Label row="1" *ngIf="selectedTab == 3" text="About" class="navText"></Label>
-      </GridLayout>
-  </GridLayout> -->
-
-
-
-
-
 </GridLayout>
