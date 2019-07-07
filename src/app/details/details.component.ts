@@ -28,8 +28,8 @@ export class DetailsComponent implements OnInit {
         this.pageRoute.activatedRoute.pipe(
             switchMap(activatedRoute => activatedRoute.params)
         ).forEach((params) => {
-            this.itemId = +params["itemId"];            
-            this.categoryId = +params["categoryId"];            
+            this.itemId = +params["itemId"];
+            this.categoryId = +params["categoryId"];
             this.item = this.dataService.getItem(this.categoryId, this.itemId);
         });
     }
@@ -51,23 +51,7 @@ export class DetailsComponent implements OnInit {
     }
 
     categoryIcon() {
-        switch (this.item.categoryTag) {
-            case "fa-fire":
-                return String.fromCharCode(0xf06d); //"fa-cutlery";
-                break;
-            case "Beer":
-                return String.fromCharCode(0xf0fc); //"fa-beer";
-                break;
-            case "Pancake":
-                return String.fromCharCode(0xf0f4); //"fa-coffee";
-                break;
-            case "Cake":
-                return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
-                break;
-            default:
-                return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
-                break;
-        }
+        return String.fromCharCode(61549); //"fa-fire";
     }
 
     closeTap(): void {

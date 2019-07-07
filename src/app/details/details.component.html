@@ -25,64 +25,46 @@
             verticalAlignment="center">
             <Label [text]="categoryIcon()" row="0" col="2" rowSpan="2" class="fa-brands category-icon"></Label>
             <Label row="0" col="1" class="item-name m-r-10" textwrap="true"
-                verticalAlignment="bottom" horizontalAlignment="left" [text]="item.name"></Label>
+                verticalAlignment="bottom" horizontalAlignment="right" [text]="item.name"></Label>
 
             <Label row="1" col="1" class="item-category m-r-10" textwrap="true"
-                verticalAlignment="top" horizontalAlignment="left" [text]="item.categoryName"></Label>
+                verticalAlignment="top" horizontalAlignment="right" [text]="item.categoryName"></Label>
 
             <StackLayout></StackLayout>
         </GridLayout>
 
         <StackLayout class="line anim-likes" row="2" width="100%" marginTop="10"></StackLayout>
 
-        <GridLayout *ngIf="item" columns="auto,*,auto,auto" rows="auto"
-            marginTop="5" width="100%" row="3" class="anim-likes">
-            <GridLayout col="0" rows="auto" columns="auto,auto" (tap)="toggleLike(item)">
-                <Label col="0" row="0" #like [class]="item.isLike ? 'fa-brands like-icon liked-active' : 'fa-brands like-icon default'"
-                    [text]="item.isLike ? '&#xf164;':'&#xf087;'"></Label>
-                <Label col="1" row="0" class="layout" [text]="item.likes"></Label>
-            </GridLayout>
-            <StackLayout col="1" orientation="horizontal" marginLeft="15">
-                <Label ref="" class="like-icon layout fa" text="&#xf0e5;"></Label>
-                <Label class="layout" [text]="item.comments"></Label>
-            </StackLayout>
-            <GridLayout col="2" rows="auto" columns="auto,auto" (tap)="toggleHeart(item)"
-                marginRight="15">
-                <Label col="0" row="0" #favorite [class]="item.isFavorite ? 'like-icon fa-brands heart-active' : 'like-icon fa-brands default'"
-                    [text]="item.isFavorite ? '&#xf004;':'&#xf08a;'"></Label>
-                <Label col="1" row="0" class="layout" text="Favorite"></Label>
-            </GridLayout>
-            <StackLayout col="3" orientation="horizontal">
-                <Label ref="" class="like-icon layout fa" text="&#xf045;"></Label>
-                <Label class="layout" text="Share"></Label>
-            </StackLayout>
-
-        </GridLayout>
     </GridLayout>
 
-    <StackLayout width="100%" class="lineBreak anim-likes"></StackLayout>
+    <GridLayout rows="auto,*" clomuns="*,auto" class="content anim-content" marginTop="15">
 
-    <Gridlayout rows="auto,*" class="content anim-content" marginTop="15">
-
-        <GridLayout row="0" rows="auto" marginBottom="5" columns="auto, auto">
-            <Label col="0" text="&#xf02c;" class="fa-brands description-icon"
-                textWrap="true"></Label>
-            <Label col="1" class="description-text" text="Description"
-                textWrap="true"></Label>
+        <GridLayout row="0" col="2">
+            <GridLayout rows="auto" marginBottom="5" columns="auto, auto">
+                    <Label col="0" text="&#xf02c;" class="fa-brands description-icon"
+                        textWrap="true"></Label>
+                    <Label col="1" class="description-text" text="מה ? מו ? מי ?"
+                        textWrap="true"></Label>
+                </GridLayout>
+        
+                <StackLayout row="1" col="2">
+                    <ScrollView>
+                        <StackLayout verticalAlignment="top" horizontalAlignment="left"
+                            *ngIf="item">
+                            <Textview editable="false" class="description-value"
+                                textWrap="true" [text]="item.description">
+                            </Textview>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
         </GridLayout>
 
-        <StackLayout row="1">
-            <ScrollView>
-                <StackLayout verticalAlignment="top" horizontalAlignment="left"
-                    *ngIf="item">
-                    <Textview editable="false" class="description-value"
-                        textWrap="true" [text]="item.description">
-                    </Textview>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
+        <GridLayout  col="1">
+
+        </GridLayout>
+        
 
 
-    </Gridlayout>
+    </GridLayout>
 
 </StackLayout>
