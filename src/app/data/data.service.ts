@@ -95,40 +95,34 @@ export class DataService {
                 products: [
                   {
                     id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/rashunut/adamame.jpg",
                   },
                   {
                     id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/rashunut/home-fries.jpg",
                   },
                   {
                     id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
+                    cover: "~/images/food/rashunut/nagets.jpg",
                   },
                   {
                     id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
+                    cover: "~/images/food/rashunut/roll.jpg",
                   },
                   {
                     id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
+                    cover: "~/images/food/rashunut/sabecha-salamon.jpg",
                   },
                   {
                     id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
+                    cover: "~/images/food/rashunut/tuna.jpg",
                   },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
                 ],
-                count: "13",
             },
             {
                 id: 2,
                 cover: "~/images/food/pancake640.jpg",
                 category: "מאודים",
-                count: "5",
                 products: [
                   {
                     id: 0,
@@ -164,7 +158,6 @@ export class DataService {
                 id: 3,
                 cover: "~/images/food/cake640.jpg",
                 category: "סלטים",
-                count: "9",
                 products: [
                   {
                     id: 0,
@@ -200,7 +193,6 @@ export class DataService {
                 id: 4,
                 cover: "~/images/food/beer640.jpg",
                 category: "מוקפצים",
-                count: "7",
                 products: [
                   {
                     id: 0,
@@ -236,7 +228,6 @@ export class DataService {
                 id: 5,
                 cover: "~/images/food/beer640.jpg",
                 category: "דגים ופירות ים",
-                count: "7",
                 products: [
                   {
                     id: 0,
@@ -272,7 +263,6 @@ export class DataService {
                 id: 6,
                 cover: "~/images/food/beer640.jpg",
                 category: "מיוחדים",
-                count: "7",
                 products: [
                   {
                     id: 0,
@@ -308,7 +298,6 @@ export class DataService {
                 id: 8,
                 cover: "~/images/food/beer640.jpg",
                 category: "מנות ילדים",
-                count: "7",
                 products: [
                   {
                     id: 0,
@@ -344,7 +333,6 @@ export class DataService {
                 id: 9,
                 cover: "~/images/food/beer640.jpg",
                 category: "קינוחים",
-                count: "7",
                 products: [
                   {
                     id: 0,
