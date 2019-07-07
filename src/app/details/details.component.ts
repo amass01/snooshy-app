@@ -52,8 +52,8 @@ export class DetailsComponent implements OnInit {
 
     categoryIcon() {
         switch (this.item.categoryTag) {
-            case "Burger":
-                return String.fromCharCode(0xf0f5); //"fa-cutlery";
+            case "fa-fire":
+                return String.fromCharCode(0xf06d); //"fa-cutlery";
                 break;
             case "Beer":
                 return String.fromCharCode(0xf0fc); //"fa-beer";
@@ -65,7 +65,7 @@ export class DetailsComponent implements OnInit {
                 return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
                 break;
             default:
-                return String.fromCharCode(0xf06d); //"fa-fire";
+                return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
                 break;
         }
     }

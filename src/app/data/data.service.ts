@@ -96,6 +96,9 @@ export class DataService {
           id: 0,
           cover: "~/images/food/seafood/kalamari.jpg",
           name: "קלמרי מטוגן",
+          categoryTag: "fa-fire",
+          categoryName: "דגים ופירות ים",
+          rating: "4.9"
         }, {
           id: 1,
           cover: "~/images/food/seafood/shrimps-fried.jpg",

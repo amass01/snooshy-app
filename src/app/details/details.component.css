@@ -28,17 +28,6 @@ TextView {
   color: black;
 }
 
-.rate {
-  padding-top: 3;
-  margin: 0;
-  color: #FFE900;
-  font-size: 18;
-}
-
-.rating-value {
-  margin-left: 5;
-}
-
 .liked-active {
   color: #4080FF;
 }
@@ -59,14 +48,6 @@ TextView {
   padding: 5 0 5 0;
 }
 
-.layout {
-    vertical-align: bottom;
-    color: #828282;
-    font-size: 20;
-    height: 30;
-    padding: 5 0 5 0;
-}
-
 .like-icon {
   vertical-align: bottom;
   height: 30;
@@ -76,12 +57,12 @@ TextView {
 }
 
 .item-name {
-  font-size: 14;
+  font-size: 20;
   font-weight: bold;
 }
 
 .item-category {
-  font-size: 14;
+  font-size: 18;
   color: #828282;
 }
 
@@ -98,6 +79,7 @@ TextView {
   margin-right: 15;
   width: 40;
   height: 40;
+  background-color: #b51213; 
 }
 
 .content {
@@ -133,15 +115,6 @@ TextView {
   border: none;
   color: #e0e0e0;
   background-color: #e0e0e0;
-}
-
-.anim-page {
-  background-color: #d4d6d8;
-  animation-name: key-page;
-  animation-duration: 2;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 @keyframes key-page {

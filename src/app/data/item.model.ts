@@ -3,7 +3,7 @@ export interface Item {
   name?: string;
   cover?: string;
   images?: Array<string>;
-  category?: string;
+  categoryName?: string;
   categoryTag?: string;
   price?: string;
   likes?: number;

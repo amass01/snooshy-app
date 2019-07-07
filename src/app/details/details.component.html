@@ -21,26 +21,14 @@
     <GridLayout rows="auto,auto,auto,auto" columns="auto" class="content">
 
         <GridLayout *ngIf="item" class="anim-itemInfo" marginTop="15" row="1"
-            width="100%" columns="auto,*" rows="auto,auto,auto,auto"
+            width="100%" columns="*,auto" rows="auto,auto,auto,auto"
             verticalAlignment="center">
-            <Label [text]="categoryIcon() " row="0" col="0" rowSpan="2"
-                [backgroundColor]="item.categoryTag" class="fa-brands category-icon"></Label>
+            <Label [text]="categoryIcon()" row="0" col="0" rowSpan="2" class="fa-brands category-icon"></Label>
             <Label row="0" col="1" class="item-name" textwrap="true"
                 verticalAlignment="bottom" horizontalAlignment="left" [text]="item.name"></Label>
 
             <Label row="1" col="1" class="item-category" textwrap="true"
-                verticalAlignment="top" horizontalAlignment="left" [text]="item.category"></Label>
-            <Label row="2" col="1" class="item-category" [text]="'Average Rate:' + item.rating "></Label>
-
-
-            <StackLayout row="3" col="1" orientation="horizontal">
-                <Label class="fa-brands rate" text="&#xf005;"></Label>
-                <Label class="fa-brands rate" text="&#xf005;"></Label>
-                <Label class="fa-brands rate" text="&#xf005;"></Label>
-                <Label class="fa-brands rate" text="&#xf005;"></Label>
-                <Label class="fa-brands rate" text="&#xf123;"></Label>
-            </StackLayout>
-
+                verticalAlignment="top" horizontalAlignment="left" [text]="item.categoryName"></Label>
 
         </GridLayout>
 
