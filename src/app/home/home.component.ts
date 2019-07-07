@@ -12,11 +12,10 @@ import { DataService } from '../data/data.service';
 export class HomeComponent implements OnInit {
 
   lastDelY = 0;
-    headerCollapsed = false;
-    selectedTab = 0;
-    selectedTabview = 0;
-    items: Array<Item>;
-    categories: Array<Category>;
+  headerCollapsed = false;
+  selectedTabview = 1;
+  items: Array<Item>;
+  categories: Array<Category>;
 
   constructor(
     private page: Page,
@@ -43,50 +42,50 @@ export class HomeComponent implements OnInit {
     //         curve: "easeIn"
     //     }
     // }]);
-}
+  }
 
-toggleLike(item) {
+  toggleLike(item) {
     item.isLike = !item.isLike;
     if (item.isLike) {
-        item.likes += 1;
+      item.likes += 1;
     } else {
-        item.likes -= 1;
+      item.likes -= 1;
     }
-}
+  }
 
-toggleHeart(item) {
+  toggleHeart(item) {
     item.isFavorite = !item.isFavorite;
-}
+  }
 
-categoryIcon(itemCategory: string) {
+  categoryIcon(itemCategory: string) {
     switch (itemCategory) {
-        case "Burger":
-            return String.fromCharCode(0xf0f5); //"fa-cutlery";
-            break;
-        case "Beer":
-            return String.fromCharCode(0xf0fc); //"fa-beer";
-            break;
-        case "Pancake":
-            return String.fromCharCode(0xf0f4); //"fa-coffee";
-            break;
-        case "Cake":
-            return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
-            break;
-        default:
-            return String.fromCharCode(0xf06d); //"fa-fire";
-            break;
+      case "Burger":
+        return String.fromCharCode(0xf0f5); //"fa-cutlery";
+        break;
+      case "Beer":
+        return String.fromCharCode(0xf0fc); //"fa-beer";
+        break;
+      case "Pancake":
+        return String.fromCharCode(0xf0f4); //"fa-coffee";
+        break;
+      case "Cake":
+        return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
+        break;
+      default:
+        return String.fromCharCode(0xf06d); //"fa-fire";
+        break;
     }
-}
+  }
 
   onPopularTap() {
     this.selectedTabview = 0;
   }
 
   onCategoryTap() {
-      this.selectedTabview = 1;
+    this.selectedTabview = 1;
   }
 
   onPromosTap() {
-      this.selectedTabview = 2;
+    this.selectedTabview = 2;
   }
 }

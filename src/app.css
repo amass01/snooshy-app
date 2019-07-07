@@ -29,7 +29,6 @@ The imported CSS rules must precede all other types of rules.
 }
 
 .tabviewText.active {
-    border-bottom: 1 solid blue;   
   color: white;
 }
 
