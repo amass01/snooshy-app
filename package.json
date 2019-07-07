@@ -9,7 +9,8 @@
     }
   },
   "scripts": {
-    "run:tablet": "tns run android --device tablet"
+    "run:tablet": "tns run android --device tablet",
+    "run:phone": "tns run android --device pixel"
   },
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
