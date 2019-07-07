@@ -8,7 +8,7 @@
         </Label>
     </GridLayout>
 
-    <ScrollView class="anim-images" orientation="horizontal">
+    <ScrollView class="anim-images" *ngIf="item.images" orientation="horizontal">
         <StackLayout orientation="horizontal" class="">
             <GridLayout *ngFor="let imageString of item.images" rows="auto"
                 columns="*">
@@ -21,15 +21,16 @@
     <GridLayout rows="auto,auto,auto,auto" columns="auto" class="content">
 
         <GridLayout *ngIf="item" class="anim-itemInfo" marginTop="15" row="1"
-            width="100%" columns="*,auto" rows="auto,auto,auto,auto"
+            width="100%" columns="*,auto,auto" rows="auto,auto,auto,auto"
             verticalAlignment="center">
-            <Label [text]="categoryIcon()" row="0" col="0" rowSpan="2" class="fa-brands category-icon"></Label>
-            <Label row="0" col="1" class="item-name" textwrap="true"
+            <Label [text]="categoryIcon()" row="0" col="2" rowSpan="2" class="fa-brands category-icon"></Label>
+            <Label row="0" col="1" class="item-name m-r-10" textwrap="true"
                 verticalAlignment="bottom" horizontalAlignment="left" [text]="item.name"></Label>
 
-            <Label row="1" col="1" class="item-category" textwrap="true"
+            <Label row="1" col="1" class="item-category m-r-10" textwrap="true"
                 verticalAlignment="top" horizontalAlignment="left" [text]="item.categoryName"></Label>
 
+            <StackLayout></StackLayout>
         </GridLayout>
 
         <StackLayout class="line anim-likes" row="2" width="100%" marginTop="10"></StackLayout>
