@@ -1,14 +1,14 @@
 <GridLayout rows="auto,auto,*,auto" columns="auto">
 
     <GridLayout row="1" #navTab class="navTab" verticalAlignment="top" height="100" width="100%" rows="auto"
-        columns="20,150,*,150,120" color="#FFFFFF">
+        columns="50,200,*,150,120" color="#FFFFFF">
 
-        <StackLayout [class]="selectedTabview==0?'tabview active':'tabview'" (tap)="onPopularTap()" col="3" row="1"
+        <StackLayout class="tabview" (tap)="onPopularTap()" col="3" row="1"
             height="100%">
             <Label [class]="selectedTabview==0?'tabviewText active':'tabviewText'" row="1" text="מועדפים">
             </Label>
         </StackLayout>
-        <StackLayout [class]="selectedTabview==1?'tabview active':'tabview'" (tap)="onCategoryTap()" col="4" row="1"
+        <StackLayout class="tabview" (tap)="onCategoryTap()" col="4" row="1"
             height="100%">
             <Label [class]="selectedTabview==1?'tabviewText active':'tabviewText'" row="1" text="תפריט"></Label>
         </StackLayout>

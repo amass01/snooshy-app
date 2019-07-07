@@ -19,13 +19,8 @@ The imported CSS rules must precede all other types of rules.
 }
 
 .tabview {
-  margin-top: 5;
   text-align: center;
   vertical-align: center;
-}
-
-.tabview.active {
-    /* vertical-align: bottom;  */
 }
 
 .tabviewText {

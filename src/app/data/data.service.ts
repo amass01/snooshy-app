@@ -150,40 +150,24 @@ export class DataService {
                   },
                 ],
             },
-            // {
-            //     id: 4,
-            //     category: "מוקפצים",
-            //     products: [
-            //       {
-            //         id: 0,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 1,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 2,
-            //         cover: "~/images/food/burger/burger2.jpg",
-            //       },
-            //       {
-            //         id: 3,
-            //         cover: "~/images/food/burger/burger3.jpg",
-            //       },
-            //       {
-            //         id: 4,
-            //         cover: "~/images/food/burger/burger4.jpg",
-            //       },
-            //       {
-            //         id: 5,
-            //         cover: "~/images/food/burger/burger5.jpg",
-            //       },
-            //       {
-            //         id: 6,
-            //         cover: "~/images/food/burger/burger6.jpg",
-            //       }
-            //     ],
-            // },
+            {
+                id: 4,
+                category: "מוקפצים",
+                products: [
+                  {
+                    id: 0,
+                    cover: "~/images/food/woks/pad-thai.jpg",
+                  },
+                  {
+                    id: 1,
+                    cover: "~/images/food/woks/noodels.jpg",
+                  },
+                  {
+                    id: 2,
+                    cover: "~/images/food/default.jpg",
+                  },
+                ],
+            },
             // {
             //     id: 5,
             //     category: "דגים ופירות ים",
