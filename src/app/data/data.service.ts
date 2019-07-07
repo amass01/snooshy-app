@@ -90,7 +90,6 @@ export class DataService {
         return [
             {
                 id: 1,
-                cover: "~/images/food/burger640.jpg",
                 category: "ראשונות",
                 products: [
                   {
@@ -121,233 +120,206 @@ export class DataService {
             },
             {
                 id: 2,
-                cover: "~/images/food/cake640.jpg",
                 category: "סלטים",
                 products: [
                   {
                     id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/salads/sea-salad.jpg",
                   },
                   {
                     id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/salads/p-salad.jpg",
                   },
                   {
                     id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
+                    cover: "~/images/food/salads/fries-salad.jpg",
                   },
                 ],
             },
             {
                 id: 3,
-                cover: "~/images/food/pancake640.jpg",
                 category: "מאודים",
                 products: [
                   {
                     id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/steamed/bans.jpg",
                   },
                   {
                     id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
+                    cover: "~/images/food/steamed/dim-sam.jpg",
                   },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
                 ],
             },
-            {
-                id: 4,
-                cover: "~/images/food/beer640.jpg",
-                category: "מוקפצים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
-                ],
-            },
-            {
-                id: 5,
-                cover: "~/images/food/beer640.jpg",
-                category: "דגים ופירות ים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
-                ],
-            },
-            {
-                id: 6,
-                cover: "~/images/food/beer640.jpg",
-                category: "מיוחדים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
-                ],
-            },
-            {
-                id: 8,
-                cover: "~/images/food/beer640.jpg",
-                category: "מנות ילדים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
-                ],
-            },
-            {
-                id: 9,
-                cover: "~/images/food/beer640.jpg",
-                category: "קינוחים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/burger/burger1.jpg",
-                  },
-                  {
-                    id: 2,
-                    cover: "~/images/food/burger/burger2.jpg",
-                  },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
-                ],
-            },
+            // {
+            //     id: 4,
+            //     category: "מוקפצים",
+            //     products: [
+            //       {
+            //         id: 0,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 1,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 2,
+            //         cover: "~/images/food/burger/burger2.jpg",
+            //       },
+            //       {
+            //         id: 3,
+            //         cover: "~/images/food/burger/burger3.jpg",
+            //       },
+            //       {
+            //         id: 4,
+            //         cover: "~/images/food/burger/burger4.jpg",
+            //       },
+            //       {
+            //         id: 5,
+            //         cover: "~/images/food/burger/burger5.jpg",
+            //       },
+            //       {
+            //         id: 6,
+            //         cover: "~/images/food/burger/burger6.jpg",
+            //       }
+            //     ],
+            // },
+            // {
+            //     id: 5,
+            //     category: "דגים ופירות ים",
+            //     products: [
+            //       {
+            //         id: 0,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 1,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 2,
+            //         cover: "~/images/food/burger/burger2.jpg",
+            //       },
+            //       {
+            //         id: 3,
+            //         cover: "~/images/food/burger/burger3.jpg",
+            //       },
+            //       {
+            //         id: 4,
+            //         cover: "~/images/food/burger/burger4.jpg",
+            //       },
+            //       {
+            //         id: 5,
+            //         cover: "~/images/food/burger/burger5.jpg",
+            //       },
+            //       {
+            //         id: 6,
+            //         cover: "~/images/food/burger/burger6.jpg",
+            //       }
+            //     ],
+            // },
+            // {
+            //     id: 6,
+            //     category: "מיוחדים",
+            //     products: [
+            //       {
+            //         id: 0,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 1,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 2,
+            //         cover: "~/images/food/burger/burger2.jpg",
+            //       },
+            //       {
+            //         id: 3,
+            //         cover: "~/images/food/burger/burger3.jpg",
+            //       },
+            //       {
+            //         id: 4,
+            //         cover: "~/images/food/burger/burger4.jpg",
+            //       },
+            //       {
+            //         id: 5,
+            //         cover: "~/images/food/burger/burger5.jpg",
+            //       },
+            //       {
+            //         id: 6,
+            //         cover: "~/images/food/burger/burger6.jpg",
+            //       }
+            //     ],
+            // },
+            // {
+            //     id: 8,
+            //     category: "מנות ילדים",
+            //     products: [
+            //       {
+            //         id: 0,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 1,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 2,
+            //         cover: "~/images/food/burger/burger2.jpg",
+            //       },
+            //       {
+            //         id: 3,
+            //         cover: "~/images/food/burger/burger3.jpg",
+            //       },
+            //       {
+            //         id: 4,
+            //         cover: "~/images/food/burger/burger4.jpg",
+            //       },
+            //       {
+            //         id: 5,
+            //         cover: "~/images/food/burger/burger5.jpg",
+            //       },
+            //       {
+            //         id: 6,
+            //         cover: "~/images/food/burger/burger6.jpg",
+            //       }
+            //     ],
+            // },
+            // {
+            //     id: 9,
+            //     category: "קינוחים",
+            //     products: [
+            //       {
+            //         id: 0,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 1,
+            //         cover: "~/images/food/burger/burger1.jpg",
+            //       },
+            //       {
+            //         id: 2,
+            //         cover: "~/images/food/burger/burger2.jpg",
+            //       },
+            //       {
+            //         id: 3,
+            //         cover: "~/images/food/burger/burger3.jpg",
+            //       },
+            //       {
+            //         id: 4,
+            //         cover: "~/images/food/burger/burger4.jpg",
+            //       },
+            //       {
+            //         id: 5,
+            //         cover: "~/images/food/burger/burger5.jpg",
+            //       },
+            //       {
+            //         id: 6,
+            //         cover: "~/images/food/burger/burger6.jpg",
+            //       }
+            //     ],
+            // },
         ];
     }
 }
