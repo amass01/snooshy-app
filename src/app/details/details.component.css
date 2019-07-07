@@ -59,6 +59,14 @@ TextView {
   padding: 5 0 5 0;
 }
 
+.layout {
+    vertical-align: bottom;
+    color: #828282;
+    font-size: 20;
+    height: 30;
+    padding: 5 0 5 0;
+}
+
 .like-icon {
   vertical-align: bottom;
   height: 30;
