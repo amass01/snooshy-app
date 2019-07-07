@@ -89,7 +89,7 @@ export class DataService {
     getCategories(): Array<Category> {
         return [
             {
-                id: 1,
+                id: 0,
                 category: "ראשונות",
                 products: [
                   {
@@ -119,7 +119,7 @@ export class DataService {
                 ],
             },
             {
-                id: 2,
+                id: 1,
                 category: "סלטים",
                 products: [
                   {
@@ -137,21 +137,7 @@ export class DataService {
                 ],
             },
             {
-                id: 3,
-                category: "מאודים",
-                products: [
-                  {
-                    id: 0,
-                    cover: "~/images/food/steamed/bans.jpg",
-                  },
-                  {
-                    id: 1,
-                    cover: "~/images/food/steamed/dim-sam.jpg",
-                  },
-                ],
-            },
-            {
-                id: 4,
+                id: 2,
                 category: "מוקפצים",
                 products: [
                   {
@@ -167,9 +153,8 @@ export class DataService {
                     cover: "~/images/food/default.jpg",
                   },
                 ],
-            },
-            {
-                id: 5,
+            }, {
+                id: 3,
                 category: "דגים ופירות ים",
                 products: [{
                     id: 0,
@@ -185,109 +170,62 @@ export class DataService {
                     cover: "~/images/food/seafood/special.jpg",
                   },
                 ],
+            }, {
+                id: 4,
+                category: "מיוחדים",
+                products: [{
+                    id: 0,
+                    cover: "~/images/food/specials/special1.jpg",
+                  }, {
+                    id: 1,
+                    cover: "~/images/food/specials/special2.jpg",
+                  }, {
+                    id: 2,
+                    cover: "~/images/food/specials/rise-seafood.jpg",
+                  }, {
+                    id: 2,
+                    cover: "~/images/food/specials/pasta-seafood.jpg",
+                  },
+                ],
             },
-            // {
-            //     id: 6,
-            //     category: "מיוחדים",
-            //     products: [
-            //       {
-            //         id: 0,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 1,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 2,
-            //         cover: "~/images/food/burger/burger2.jpg",
-            //       },
-            //       {
-            //         id: 3,
-            //         cover: "~/images/food/burger/burger3.jpg",
-            //       },
-            //       {
-            //         id: 4,
-            //         cover: "~/images/food/burger/burger4.jpg",
-            //       },
-            //       {
-            //         id: 5,
-            //         cover: "~/images/food/burger/burger5.jpg",
-            //       },
-            //       {
-            //         id: 6,
-            //         cover: "~/images/food/burger/burger6.jpg",
-            //       }
-            //     ],
-            // },
-            // {
-            //     id: 8,
-            //     category: "מנות ילדים",
-            //     products: [
-            //       {
-            //         id: 0,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 1,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 2,
-            //         cover: "~/images/food/burger/burger2.jpg",
-            //       },
-            //       {
-            //         id: 3,
-            //         cover: "~/images/food/burger/burger3.jpg",
-            //       },
-            //       {
-            //         id: 4,
-            //         cover: "~/images/food/burger/burger4.jpg",
-            //       },
-            //       {
-            //         id: 5,
-            //         cover: "~/images/food/burger/burger5.jpg",
-            //       },
-            //       {
-            //         id: 6,
-            //         cover: "~/images/food/burger/burger6.jpg",
-            //       }
-            //     ],
-            // },
-            // {
-            //     id: 9,
-            //     category: "קינוחים",
-            //     products: [
-            //       {
-            //         id: 0,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 1,
-            //         cover: "~/images/food/burger/burger1.jpg",
-            //       },
-            //       {
-            //         id: 2,
-            //         cover: "~/images/food/burger/burger2.jpg",
-            //       },
-            //       {
-            //         id: 3,
-            //         cover: "~/images/food/burger/burger3.jpg",
-            //       },
-            //       {
-            //         id: 4,
-            //         cover: "~/images/food/burger/burger4.jpg",
-            //       },
-            //       {
-            //         id: 5,
-            //         cover: "~/images/food/burger/burger5.jpg",
-            //       },
-            //       {
-            //         id: 6,
-            //         cover: "~/images/food/burger/burger6.jpg",
-            //       }
-            //     ],
-            // },
+            {
+              id: 5,
+              category: "מאודים",
+              products: [
+                {
+                  id: 0,
+                  cover: "~/images/food/steamed/bans.jpg",
+                },
+                {
+                  id: 1,
+                  cover: "~/images/food/steamed/dim-sam.jpg",
+                },
+              ],
+            },
+            {
+                id: 6,
+                category: "מנות ילדים",
+                products: [
+                  {
+                    id: 0,
+                    cover: "~/images/food/kids/fish-and-chips.jpg",
+                  },
+                  {
+                    id: 1,
+                    cover: "~/images/food/kids/noodels.jpg",
+                  },
+                ],
+            },
+            {
+                id: 9,
+                category: "קינוחים",
+                products: [
+                  {
+                    id: 0,
+                    cover: "~/images/food/deserts/banana-l.jpg",
+                  },
+                ],
+            },
         ];
     }
 }
