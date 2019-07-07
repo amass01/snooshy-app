@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page/page';
-import { Item } from '../data/item.model';
 import { Category } from '../data/category.model';
 import { DataService } from '../data/data.service';
 import { RouterExtensions } from 'nativescript-angular/router';
@@ -33,7 +32,6 @@ export class HomeComponent implements OnInit {
   }
 
   productTap(categoryId: string, itemId: string) {
-    console.log(`Tapped on ${itemId}`);
     this.routerExtensions.navigate([`details/${categoryId}/${itemId}`, {
         animated: true,
         transition: {
@@ -43,28 +41,6 @@ export class HomeComponent implements OnInit {
         }
     }]);
   }
-
-  // categoryIcon(itemCategory: string) {
-  //   switch (itemCategory) {
-  //     case "Burger":
-  //       return String.fromCharCode(0xf0f5); //"fa-cutlery";
-  //       break;
-  //     case "Beer":
-  //       return String.fromCharCode(0xf0fc); //"fa-beer";
-  //       break;
-  //     case "Pancake":
-  //       return String.fromCharCode(0xf0f4); //"fa-coffee";
-  //       break;
-  //     case "Cake":
-  //       return String.fromCharCode(0xf1fd); //"fa-birthday-cake";
-  //       break;
-  //     default:
-  //       return String.fromCharCode(0xf06d); //"fa-fire";
-  //       break;
-  //   }
-  // }
-
-
 
   favoritesTap() {
     this.selectedTabview = 0;

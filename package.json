@@ -12,9 +12,9 @@
     "run:tablet": "tns run android --device tablet",
     "run:phone": "tns run android --device pixel"
   },
-  "description": "NativeScript Application",
+  "description": "Snooshy - The coolest Asian resturant",
   "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
+  "repository": "https://github.com/amassarwi/snooshy-app",
   "dependencies": {
     "@angular/animations": "~8.0.0",
     "@angular/common": "~8.0.0",
