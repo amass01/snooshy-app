@@ -39,31 +39,23 @@
 
     <GridLayout rows="auto,*" clomuns="*,auto" class="content anim-content" marginTop="15">
 
-        <GridLayout row="0" col="2">
             <GridLayout rows="auto" marginBottom="5" columns="auto, auto">
-                    <Label col="0" text="&#xf02c;" class="fa-brands description-icon"
-                        textWrap="true"></Label>
-                    <Label col="1" class="description-text" text="מה ? מו ? מי ?"
-                        textWrap="true"></Label>
-                </GridLayout>
+                <Label col="0" text="&#xf02c;" class="fa-brands description-icon"
+                    textWrap="true"></Label>
+                <Label col="1" class="description-text" text="מה ? מו ? מי ?"
+                    textWrap="true"></Label>
+            </GridLayout>
         
-                <StackLayout row="1" col="2">
-                    <ScrollView>
-                        <StackLayout verticalAlignment="top" horizontalAlignment="left"
-                            *ngIf="item">
-                            <Textview editable="false" class="description-value"
-                                textWrap="true" [text]="item.description">
-                            </Textview>
-                        </StackLayout>
-                    </ScrollView>
-                </StackLayout>
-        </GridLayout>
-
-        <GridLayout  col="1">
-
-        </GridLayout>
-        
-
+            <StackLayout row="1" col="2">
+                <ScrollView>
+                    <StackLayout verticalAlignment="top" horizontalAlignment="left"
+                        *ngIf="item">
+                        <Textview editable="false" class="description-value"
+                            textWrap="true" [text]="item.description">
+                        </Textview>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
 
     </GridLayout>
 
