@@ -19,26 +19,32 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/rashunut/adamame.jpg",
+            name: "אדממה",
           },
           {
             id: 1,
             cover: "~/images/food/rashunut/home-fries.jpg",
+            name: "הום פרייז",
           },
           {
             id: 2,
             cover: "~/images/food/rashunut/nagets.jpg",
+            name: "נאגטס עוף",
           },
           {
             id: 3,
             cover: "~/images/food/rashunut/roll.jpg",
+            name: "אגרול",
           },
           {
             id: 4,
             cover: "~/images/food/rashunut/sabecha-salamon.jpg",
+            name: "סביצ'ה סלמון",
           },
           {
             id: 5,
             cover: "~/images/food/rashunut/tuna.jpg",
+            name: "ברוסקטה טונה",
           },
         ],
       },
@@ -49,14 +55,17 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/salads/sea-salad.jpg",
+            name: "סלט ים",
           },
           {
             id: 1,
             cover: "~/images/food/salads/p-salad.jpg",
+            name: "סלט פפאיה חריף",
           },
           {
             id: 2,
             cover: "~/images/food/salads/fries-salad.jpg",
+            name: "סלט הומפרייז",
           },
         ],
       },
@@ -67,14 +76,17 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/woks/pad-thai.jpg",
+            name: "פאד תאי",
           },
           {
             id: 1,
             cover: "~/images/food/woks/noodels.jpg",
+            name: "נודלס",
           },
           {
             id: 2,
             cover: "~/images/food/default.jpg",
+            name: "מנות אורז",
           },
         ],
       }, {
@@ -83,15 +95,19 @@ export class DataService {
         products: [{
           id: 0,
           cover: "~/images/food/seafood/kalamari.jpg",
+          name: "קלמרי מטוגן",
         }, {
           id: 1,
           cover: "~/images/food/seafood/shrimps-fried.jpg",
+          name: "שרימפס מטוגן",
         }, {
           id: 2,
           cover: "~/images/food/seafood/crispy-fish.jpg",
+          name: "ברבוניות מוזהבות",
         }, {
-          id: 2,
+          id: 3,
           cover: "~/images/food/seafood/special.jpg",
+          name: "מיקס מטוגנים",
         },
         ],
       }, {
@@ -100,15 +116,19 @@ export class DataService {
         products: [{
           id: 0,
           cover: "~/images/food/specials/special1.jpg",
+          name: "מנת השף",
         }, {
           id: 1,
           cover: "~/images/food/specials/special2.jpg",
+          name: "פצצות פירות ים",
         }, {
           id: 2,
           cover: "~/images/food/specials/rise-seafood.jpg",
+          name: "אורז פירות ים",
         }, {
-          id: 2,
+          id: 3,
           cover: "~/images/food/specials/pasta-seafood.jpg",
+          name: "פסטה פירות ים",
         },
         ],
       },
@@ -119,10 +139,12 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/steamed/bans.jpg",
+            name: "באן",
           },
           {
             id: 1,
             cover: "~/images/food/steamed/dim-sam.jpg",
+            name: "דים סאם",
           },
         ],
       },
@@ -133,10 +155,12 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/kids/fish-and-chips.jpg",
+            name: "פיש & צ'יפס",
           },
           {
             id: 1,
             cover: "~/images/food/kids/noodels.jpg",
+            name: "נודלס עוף ילדים",
           },
         ],
       },
@@ -147,6 +171,7 @@ export class DataService {
           {
             id: 0,
             cover: "~/images/food/deserts/banana-l.jpg",
+            name: "בננה לוטי",
           },
         ],
       },

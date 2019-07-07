@@ -37,7 +37,7 @@
                     <ScrollView class="anim-images" orientation="horizontal">
                         <StackLayout orientation="horizontal">
                             <GridLayout *ngFor="let imageString of getItemImages(category); index as i;" rows="*,*" columns="*">
-                                <Label row="1" class="label-img" text="אדממה"></Label>
+                                <Label row="1" class="label-img" [text]="getProductName(category, i)"></Label>
                                 <Image row="2" class="card-img-thumb" row="0" col="0" (tap)="productTap(category.id, i)" [src]="imageString" stretch="aspectFill">
                                 </Image>
                             </GridLayout>

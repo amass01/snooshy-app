@@ -3,6 +3,7 @@ import { Page } from 'tns-core-modules/ui/page/page';
 import { Category } from '../data/category.model';
 import { DataService } from '../data/data.service';
 import { RouterExtensions } from 'nativescript-angular/router';
+import { Item } from '../data/item.model';
 
 @Component({
   selector: 'ns-home',
@@ -29,6 +30,10 @@ export class HomeComponent implements OnInit {
 
   getItemImages(category: Category) {
     return category.products.map((item) => item.cover);
+  }
+
+  getProductName(category: Category, itemId: number) {
+    return category.products[itemId].name;
   }
 
   productTap(categoryId: string, itemId: string) {
