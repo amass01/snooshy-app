@@ -15,24 +15,22 @@ import { DataService } from "../data/data.service";
 
 export class DetailsComponent implements OnInit {
     itemId: number;
+    categoryId: number;
     item: Item;
-    items: Array<Item>;
-
     constructor(
         private pageRoute: PageRoute,
         private routerExtensions: RouterExtensions,
         private page: Page,
         private dataService: DataService) {
 
-        this.items = this.dataService.getItems();        
-
         this.page.actionBarHidden = true;
 
         this.pageRoute.activatedRoute.pipe(
             switchMap(activatedRoute => activatedRoute.params)
         ).forEach((params) => {
-            this.itemId = +params["id"];            
-            this.item = this.items.filter(item => item.id == this.itemId)[0];
+            this.itemId = +params["itemId"];            
+            this.categoryId = +params["categoryId"];            
+            this.item = this.dataService.getItem(this.categoryId, this.itemId);
         });
     }
 

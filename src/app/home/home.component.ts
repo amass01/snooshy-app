@@ -3,6 +3,7 @@ import { Page } from 'tns-core-modules/ui/page/page';
 import { Item } from '../data/item.model';
 import { Category } from '../data/category.model';
 import { DataService } from '../data/data.service';
+import { RouterExtensions } from 'nativescript-angular/router';
 
 @Component({
   selector: 'ns-home',
@@ -14,16 +15,15 @@ export class HomeComponent implements OnInit {
   lastDelY = 0;
   headerCollapsed = false;
   selectedTabview = 1;
-  items: Array<Item>;
   categories: Array<Category>;
 
   constructor(
     private page: Page,
     private dataService: DataService,
+    private routerExtensions: RouterExtensions
   ) { }
 
   ngOnInit(): void {
-    this.items = this.dataService.getItems();
     this.categories = this.dataService.getCategories();
     this.page.actionBarHidden = true;
   }
@@ -32,16 +32,16 @@ export class HomeComponent implements OnInit {
     return category.products.map((item) => item.cover);
   }
 
-  showItem(itemId: string) {
+  productTap(categoryId: string, itemId: string) {
     console.log(`Tapped on ${itemId}`);
-    // this.routerExtensions.navigate(["detail/" + itemId, {
-    //     animated: true,
-    //     transition: {
-    //         name: "slideTop",
-    //         duration: 380,
-    //         curve: "easeIn"
-    //     }
-    // }]);
+    this.routerExtensions.navigate([`details/${categoryId}/${itemId}`, {
+        animated: true,
+        transition: {
+            name: "slideTop",
+            duration: 380,
+            curve: "easeIn"
+        }
+    }]);
   }
 
   // categoryIcon(itemCategory: string) {
@@ -63,6 +63,8 @@ export class HomeComponent implements OnInit {
   //       break;
   //   }
   // }
+
+
 
   favoritesTap() {
     this.selectedTabview = 0;
