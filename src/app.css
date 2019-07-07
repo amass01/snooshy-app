@@ -30,6 +30,7 @@ The imported CSS rules must precede all other types of rules.
 
 .tabviewText {
     color: #d8d2d2;
+    font-size: 30;
 }
 
 .tabviewText.active {
@@ -42,19 +43,18 @@ The imported CSS rules must precede all other types of rules.
 }
 
 .logo-img {
-	margin-top: 10;
-  width: 150;
+    width: 200;     
 }
 
 .item-category {
-    font-size: 14;
+    font-size: 20;
     color: #828282;
 }
 
 .rating-icon {
     padding-top: 3;
     color: #FFE900;
-    font-size: 14;
+    font-size: 20;
     margin-left: 10;
 }
 
@@ -77,7 +77,7 @@ The imported CSS rules must precede all other types of rules.
 .layout {
     vertical-align: bottom;
     color: #828282;
-    font-size: 14;
+    font-size: 20;
     height: 30;
     padding: 5 0 5 0;
 }
@@ -85,18 +85,18 @@ The imported CSS rules must precede all other types of rules.
 .like-icon {
     vertical-align: bottom;
     height: 30;
-    font-size: 16;
+    font-size: 20;
     margin-right: 2;
     padding: 5 5 5 5;
 }
 
 .item-name {
-    font-size: 14;
+    font-size: 20;
     font-weight: bold;
 }
 
 .item-category {
-    font-size: 14;
+    font-size: 20;
     color: #828282;
 }
 
@@ -148,7 +148,7 @@ The imported CSS rules must precede all other types of rules.
 
 .category-name {
     color: #bd2122;
-    font-size: 14;
+    font-size: 30;
     font-weight: bold;
     horizontal-align: center;
     vertical-align: center;
