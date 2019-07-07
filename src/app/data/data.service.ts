@@ -121,8 +121,8 @@ export class DataService {
             },
             {
                 id: 2,
-                cover: "~/images/food/pancake640.jpg",
-                category: "מאודים",
+                cover: "~/images/food/cake640.jpg",
+                category: "סלטים",
                 products: [
                   {
                     id: 0,
@@ -136,28 +136,12 @@ export class DataService {
                     id: 2,
                     cover: "~/images/food/burger/burger2.jpg",
                   },
-                  {
-                    id: 3,
-                    cover: "~/images/food/burger/burger3.jpg",
-                  },
-                  {
-                    id: 4,
-                    cover: "~/images/food/burger/burger4.jpg",
-                  },
-                  {
-                    id: 5,
-                    cover: "~/images/food/burger/burger5.jpg",
-                  },
-                  {
-                    id: 6,
-                    cover: "~/images/food/burger/burger6.jpg",
-                  }
                 ],
             },
             {
                 id: 3,
-                cover: "~/images/food/cake640.jpg",
-                category: "סלטים",
+                cover: "~/images/food/pancake640.jpg",
+                category: "מאודים",
                 products: [
                   {
                     id: 0,
