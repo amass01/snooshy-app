@@ -70,7 +70,7 @@ export class DetailsComponent implements OnInit {
         }
     }
 
-    onCloseTap(): void {
+    closeTap(): void {
         this.routerExtensions.back();
     }
 

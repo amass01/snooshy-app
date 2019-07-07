@@ -1,10 +1,10 @@
 <StackLayout class="main" verticalAlignment="top">
 
     <GridLayout class="anim-cover" rows="auto" columns="*">
-        <Image row="0" col="0" marginTop="-40" height="180" stretch="aspectFill"
+        <Image row="0" col="0" height="180" stretch="aspectFill"
             class="card-img" [src]="item.cover"></Image>
         <Label row="0" col="0" verticalAlignment="top" horizontalAlignment="left"
-            (tap)="onCloseTap()" fontSize="24" text="&#xf060;" class="fa close">
+            (tap)="closeTap()" fontSize="24" text="&#xf060;" class="fa-brands close">
         </Label>
     </GridLayout>
 
@@ -24,7 +24,7 @@
             width="100%" columns="auto,*" rows="auto,auto,auto,auto"
             verticalAlignment="center">
             <Label [text]="categoryIcon() " row="0" col="0" rowSpan="2"
-                [backgroundColor]="item.categoryTag" class="fa category-icon"></Label>
+                [backgroundColor]="item.categoryTag" class="fa-brands category-icon"></Label>
             <Label row="0" col="1" class="item-name" textwrap="true"
                 verticalAlignment="bottom" horizontalAlignment="left" [text]="item.name"></Label>
 
@@ -34,11 +34,11 @@
 
 
             <StackLayout row="3" col="1" orientation="horizontal">
-                <Label class="fa rate" text="&#xf005;"></Label>
-                <Label class="fa rate" text="&#xf005;"></Label>
-                <Label class="fa rate" text="&#xf005;"></Label>
-                <Label class="fa rate" text="&#xf005;"></Label>
-                <Label class="fa rate" text="&#xf123;"></Label>
+                <Label class="fa-brands rate" text="&#xf005;"></Label>
+                <Label class="fa-brands rate" text="&#xf005;"></Label>
+                <Label class="fa-brands rate" text="&#xf005;"></Label>
+                <Label class="fa-brands rate" text="&#xf005;"></Label>
+                <Label class="fa-brands rate" text="&#xf123;"></Label>
             </StackLayout>
 
 
@@ -49,7 +49,7 @@
         <GridLayout *ngIf="item" columns="auto,*,auto,auto" rows="auto"
             marginTop="5" width="100%" row="3" class="anim-likes">
             <GridLayout col="0" rows="auto" columns="auto,auto" (tap)="toggleLike(item)">
-                <Label col="0" row="0" #like [class]="item.isLike ? 'fa like-icon liked-active' : 'fa like-icon default'"
+                <Label col="0" row="0" #like [class]="item.isLike ? 'fa-brands like-icon liked-active' : 'fa-brands like-icon default'"
                     [text]="item.isLike ? '&#xf164;':'&#xf087;'"></Label>
                 <Label col="1" row="0" class="layout" [text]="item.likes"></Label>
             </GridLayout>
@@ -59,7 +59,7 @@
             </StackLayout>
             <GridLayout col="2" rows="auto" columns="auto,auto" (tap)="toggleHeart(item)"
                 marginRight="15">
-                <Label col="0" row="0" #favorite [class]="item.isFavorite ? 'like-icon fa heart-active' : 'like-icon fa default'"
+                <Label col="0" row="0" #favorite [class]="item.isFavorite ? 'like-icon fa-brands heart-active' : 'like-icon fa-brands default'"
                     [text]="item.isFavorite ? '&#xf004;':'&#xf08a;'"></Label>
                 <Label col="1" row="0" class="layout" text="Favorite"></Label>
             </GridLayout>
@@ -76,7 +76,7 @@
     <Gridlayout rows="auto,*" class="content anim-content" marginTop="15">
 
         <GridLayout row="0" rows="auto" marginBottom="5" columns="auto, auto">
-            <Label col="0" text="&#xf02c;" class="fa description-icon"
+            <Label col="0" text="&#xf02c;" class="fa-brands description-icon"
                 textWrap="true"></Label>
             <Label col="1" class="description-text" text="Description"
                 textWrap="true"></Label>

@@ -28,11 +28,18 @@
   }
 }
 
+.label-img {
+  font-size: 20;
+  color: black;
+  text-align: center;
+  margin: 8 0;
+}
+
 .card-img-thumb {
   background-color: #828282;
   vertical-align: center;
-  border-radius: 5;
+  border-radius: 8;
   width: 325;
   height: 200;
-  margin-left: 5;
+  margin: 4;
 }
