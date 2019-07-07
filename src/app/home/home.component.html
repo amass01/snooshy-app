@@ -28,7 +28,7 @@
     <GridLayout *ngIf="selectedTabview == 1" row="2" width="100%" backgroundColor="white">
         <ListView #categoryListview [items]="categories" separatorColor="transparent">
             <ng-template let-category="item">
-                <StackLayout backgroundColor="#489e9e9e">
+                <StackLayout backgroundColor="#ffffff">
                     <Label [text]="category.category + ' (' +  category.products.length  +  ')'" 
                            class="category-name"
                            textwrap="true"
