@@ -46,14 +46,16 @@ export class DataService {
             cover: "~/images/food/rashunut/sabecha-salamon.jpg",
             name: "סביצ'ה סלמון",
             categoryName: "ראשונות",
-            description: "קוביות סלמון, שירי, פטרוזליה, בצל סגול, נענע ובלסמי"
+            description: "קוביות סלמון, שירי, פטרוזליה, בצל סגול, נענע ובלסמי",
+            price: "30",
           },
           {
             id: 5,
             cover: "~/images/food/rashunut/tuna.jpg",
             name: "ברוסקטה טונה",
             categoryName: "ראשונות",
-            description: "שירי צבעוני, בצל ירוק, פטרוזליה, נענע, איולי לימון וטונה צרונה"
+            description: "שירי צבעוני, בצל ירוק, פטרוזליה, נענע, איולי לימון וטונה צרונה",
+            price: "30",
           },
         ],
       },

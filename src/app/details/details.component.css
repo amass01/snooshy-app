@@ -10,35 +10,35 @@ TextView {
 }
 
 .description-text {
-  font-size: 14;
+  font-size: 24;
   font-weight: bold;
   color: black;
 }
 
 .description-icon {
-  font-size: 16;
-  font-weight: bold;
+  font-size: 28;
   color: #3e9edb;
   margin-right: 8;
   vertical-align: center;
 }
 
-.description-value {
+.description {
   font-size: 28;
-  margin: 16;
+  margin: 50 50 0 0;
   color: black;
 }
 
-.liked-active {
-  color: #4080FF;
+.description-value {
+  font-size: 28;
+  color: black;
 }
 
-.heart-active {
+.price-text {
   color: #b51213;
 }
 
-.default {
-  color: #828282;
+.price-label {
+  color: black;
 }
 
 .layout {
