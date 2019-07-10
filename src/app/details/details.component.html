@@ -40,7 +40,7 @@
 
     <GridLayout rows="auto,*" clomuns="auto,auto,auto" class="content anim-content" marginTop="15">
 
-            <GridLayout class="m-20" horizontalAlignment="right" rows="auto" marginBottom="5" columns="auto, auto">
+            <GridLayout class="m-20" *ngIf="item.description" horizontalAlignment="right" rows="auto" marginBottom="5" columns="auto, auto">
                 <Label col="1" orizontalAlignment="right" text="&#xf02c;" class="fa-brands description-icon"
                     textWrap="true"></Label>
                 <Label class="description-text m-r-10" text="מה ? מו ? מי ?"
@@ -49,7 +49,7 @@
         
             <StackLayout horizontalAlignment="right" class="description">
                 <Textview editable="false" class="description-value"
-                    textWrap="true" [text]="item.description">
+                    textWrap="true" *ngIf="item.description" [text]="item.description">
                 </Textview>
 
                 <FlexboxLayout horizontalAlignment="right" alignItems="flex-start" flexDirection="row-reverse">
