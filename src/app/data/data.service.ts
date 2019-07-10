@@ -126,7 +126,7 @@ export class DataService {
             cover: "~/images/food/woks/noodels.jpg",
             name: "נודלס",
             categoryName: "מוקפצים",
-            description: "עוף | בקר | שרימפס | | עוף פריך | קלמרי פריך | צמחוני => 30 שקל",
+            description: "עוף | בקר | שרימפס | עוף פריך | קלמרי פריך | צמחוני => 30 שקל",
             price: "40",
           },
           {
