@@ -98,7 +98,7 @@ export class DataService {
             categoryName: "סלטים",
             description: "רצועות פפאיה, עגבניות שרי נענע, כוסברה, בוטנים, וצ'ילי חריף",
             price: "30",
-          },נאגס עוף מוזהב ברוטב הבית
+          },
           {
             id: 2,
             cover: "~/images/food/salads/fries-salad.jpg",
